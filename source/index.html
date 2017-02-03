@@ -1,0 +1,47 @@
+---
+layout: default
+title: gaxze.io
+generator: pagination
+pagination:
+    max_per_page: 5
+use:
+    - posts
+---
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+            <div class="latest">
+                <h2 class="heading first">Latest Updates</h2>
+                {% for post in page.pagination.items %}
+                    <article class="blog-entry">
+                        <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+                        <time>{{ post.date|date("M. jS, Y") }}</time>
+                        <div> {{ post.blocks.content|split('</p>')|first|raw}} </div>
+                    </article>
+                    {% if not loop.last %}<hr />{% endif %}
+                {% endfor %}
+
+                {% if page.pagination.previous_page or page.pagination.next_page %}
+                <nav>
+                    {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
+                    {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
+                </nav>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+            <div class="whoami">
+                <h2 class="heading first">About</h2>
+                <p>Welcome, my name is Gary. I'm a web developer who specialises in Drupal, but I'm quite versed with other open source web technologies. This isn't specifically a portfolio website, but more of a collection of stuff that I want out on the internet and in the public domain.</p>
+                <p></p>
+                <p>This site is currently under construction but I'm hoping to soon dedicate more time to it and have it properly up and running.</p>
+                <p>Until then please bare with me and and just drop me a <a target="_blank" href="https://twitter.com/intent/tweet?text=@GaxZE%20">tweet</a>.</p>
+            </div>
+            <div class="tweets">
+                <h2 class="heading">Latest Tweets</h2>
+                <a class="twitter-timeline" border-color="#a80000" lang="en" data-chrome="nofooter noheader" data-dnt="true" href="https://twitter.com/GaxZE" data-widget-id="702881882367725569" data-height="350">Tweets by @GaxZE</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
