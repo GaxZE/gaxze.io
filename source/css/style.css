@@ -60,7 +60,7 @@ header {
     margin-bottom: 20px;
 }
 
-header .container {
+header.hero-image {
     padding-top: 125px;
     padding-bottom: 25px;
 }
@@ -145,7 +145,7 @@ footer {
     color: #d8dbe2;
     background: #333333;
     font-family: "Open Sans", sans-serif;
-    padding:10px 0 0;
+    padding: 10px 0 0;
     margin-top: 20px;
 }
 
