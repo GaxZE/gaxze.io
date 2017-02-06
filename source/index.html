@@ -3,9 +3,12 @@ layout: default
 title: gaxze.io
 generator: pagination
 pagination:
-    max_per_page: 5
+    max_per_page: 6
 use:
     - posts
+hero: /images/header.jpeg
+body_class: front
+
 ---
 
 {% block content %}
@@ -21,13 +24,6 @@ use:
                     </article>
                     {% if not loop.last %}<hr />{% endif %}
                 {% endfor %}
-
-                {% if page.pagination.previous_page or page.pagination.next_page %}
-                <nav>
-                    {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
-                    {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
-                </nav>
-                {% endif %}
             </div>
         </div>
         <div class="col-md-4 col-sm-4">

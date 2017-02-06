@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+hero: 
 
 ---
 # About the Author or Blog

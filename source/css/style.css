@@ -20,6 +20,10 @@ a.active {
     transition: all .5s;
 }
 
+h1, h2 {
+    font-weight: bold;
+}
+
 h1,
 h2,
 h3,
@@ -31,7 +35,8 @@ h6 {
 }
 
 section#main {
-    font-size: 1.2em;
+    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .heading {
@@ -44,25 +49,38 @@ section#main {
     margin: 0 auto;
 }
 
-header .logo {
+header.hero-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header.hero-image .logo {
     text-align: center;
 }
 
-header .logo img {
+header.hero-image .logo img {
     border: 8px solid #f0803c;
     border-radius: 50%;
     margin: 0 auto 20px;
     height: 180px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 header.hero-image {
     padding-top: 125px;
     padding-bottom: 25px;
+    background: #000;
+}
+
+body.front header.hero-image {
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+article header h1 {
+    font-size: 44px;
+    font-size: 4.4rem;
+    margin: 0 0 40px;
+    font-weight: 400;
 }
 
 .social-media ul.list-inline > li {

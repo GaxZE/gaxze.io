@@ -1,0 +1,9 @@
+{
+  "name": "garyhawes.co.uk",
+  "devDependencies": {
+    "bootstrap": "3.3.*",
+    "font-awesome": "4.*",
+    "jquery": "1.11.*",
+    "highlightjs": "^9.9.0"
+  }
+}

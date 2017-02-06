@@ -2,6 +2,7 @@
 title: Syntax Highlighting
 categories:
     - features
+hero: /images/profile.png
 
 ---
 You're all programmers, right? And you're writing code snippets on your Sculpin

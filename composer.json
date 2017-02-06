@@ -3,24 +3,14 @@
         "sculpin/sculpin": "^2.1@dev",
         "dflydev/embedded-composer": "^1.0@dev",
         "kriswallsmith/assetic": "1.1.2",
-        "components/bootstrap": "3.3.*",
-        "components/jquery": "1.11.*",
-        "components/highlightjs": "^9.7",
-        "components/font-awesome": "4.*"
     },
     "config": {
-        "component-dir": "source/components",
-        "components": [
-            "components/bootstrap",
-            "components/jquery",
-            "components/highlightjs",
-            "components/font-awesome"
-        ]
+        "sort-packages": true
     },
     "scripts": {
-        "post-install-cmd": [
-            "ComponentManager\\ComponentManager::postComposerInstall"
-        ]
+        "clean": "rm -rf output_*/",
+        "dev": "sculpin generate --clean --no-interaction --server --watch",
+        "production": "sculpin generate --clean --no-interaction --env='prod' --quiet"
     },
     "autoload": {
         "classmap": ["component-manager.php"]
