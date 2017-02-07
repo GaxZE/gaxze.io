@@ -1,9 +1,7 @@
 {
   "name": "garyhawes.co.uk",
   "scripts": {
-    "init": "bower install",
-    "dev": "gulp watch",
-    "production": "gulp --production"
+    "init": "npm install && bower install && grunt"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

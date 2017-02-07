@@ -2,7 +2,7 @@
     "require": {
         "sculpin/sculpin": "^2.1@dev",
         "dflydev/embedded-composer": "^1.0@dev",
-        "kriswallsmith/assetic": "1.1.2",
+        "kriswallsmith/assetic": "1.1.2"
     },
     "config": {
         "sort-packages": true
@@ -11,8 +11,5 @@
         "clean": "rm -rf output_*/",
         "dev": "sculpin generate --clean --no-interaction --server --watch",
         "production": "sculpin generate --clean --no-interaction --env='prod' --quiet"
-    },
-    "autoload": {
-        "classmap": ["component-manager.php"]
     }
 }

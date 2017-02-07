@@ -1,6 +1,8 @@
 /output_*/
 /source/components/
+/source/css/
+/source/js/
 /vendor/
 /bower_components/
-s3.conf
+/node_modules/
 .idea

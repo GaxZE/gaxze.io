@@ -5,9 +5,10 @@
     <title>{% block title %}Gary Hawes | garyhawes.co.uk{% endblock %}</title>
     {% block stylesheets %}
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ site.url }}/components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{ site.url }}/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{ site.url }}/css/style.css" />
+    <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/darcula.css" />
+    <link rel="stylesheet" href="{{ site.url }}/css/garyhawes.min.css" />
     {% endblock %}
 </head>
 <body class="{{ page.body_class }}">
@@ -35,8 +36,10 @@
     {% endif %}
 
     {% block javascripts %}
-        <script src="{{ site.url }}/components/jquery/jquery.min.js"></script>
-        <script src="{{ site.url }}/components/bootstrap/js/bootstrap.min.js"></script>
+        <script src="{{ site.url }}/components/jquery/dist/jquery.min.js"></script>
+        <script src="{{ site.url }}/components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="{{ site.url }}/components/highlightjs/highlight.pack.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     {% endblock %}
 </body>
