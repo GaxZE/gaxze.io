@@ -1,9 +1,9 @@
 ---
 layout: default
 title: About
-hero: 
+hero:
 
 ---
-# About the Author or Blog
+# Hello I'm Gary.
 
-Here is a little information about the author or the blog.
+I'm primarily a Drupal developer from Surrey/London, but don't let that deter you!
