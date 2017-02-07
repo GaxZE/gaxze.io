@@ -6,7 +6,7 @@
       "url": "https://github.com/gaxze/gaxze.io"
   },
   "scripts": {
-    "init": "npm install && bower install && grunt"
+    "init": "npm install && bower install"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

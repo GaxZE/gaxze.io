@@ -3,12 +3,17 @@
         {% include "navigation.html" %}
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-8 col-lg-offset-2">
+                    {% if page.body_class == 'front' %}
                     <div class="logo social-media">
                         <img class="img-responsive header-logo" src="{{ site.url }}{{ site.logo }}" alt="Logo">
-                        <span>{{ site.moto }}</span>
                         {% include "social-media.html" %}
                     </div>
+                    {% else %}
+                    <div class="page-headercol-sm-12 text-col text-center">
+                        <h1 class="title">{{ page.title }} <small>{{ page.subtext }}</small></h1>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

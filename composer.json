@@ -9,7 +9,7 @@
     },
     "scripts": {
         "clean": "rm -rf output_*/",
-        "dev": "sculpin generate --clean --no-interaction --server --watch",
+        "dev": "grunt && composer run clean && php vendor/bin/sculpin generate --watch --server",
         "production": "sculpin generate --clean --no-interaction --env='prod' --quiet"
     }
 }
