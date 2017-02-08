@@ -2,7 +2,9 @@
 /source/components/
 /source/css/
 /source/js/
+/source/images/
 /vendor/
 /bower_components/
 /node_modules/
 .idea
+.DS_Store

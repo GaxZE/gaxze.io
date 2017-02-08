@@ -2,13 +2,7 @@
 title: Lorem Ipsum
 categories:
     - testing
-
-# https://help.disqus.com/customer/portal/articles/472098-javascript-configuration-variables
-disqus: 
-    identifier: # slug_for_current_page
-    title: # title_for_current_page
-    url: # url_for_current_page
-    category_id: # category_id_for_current_page
+hero: /images/flame.jpeg
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue

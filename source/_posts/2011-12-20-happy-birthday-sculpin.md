@@ -5,7 +5,7 @@ tags:
     - markdown
 categories:
     - personal
-hero: /images/profile.png
+hero: /images/volcano-sea.jpg
 
 ---
 

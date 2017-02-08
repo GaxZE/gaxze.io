@@ -2,22 +2,31 @@
   "name": "garyhawes.co.uk",
   "description": "gruntfile used to build my blog.",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/gaxze/gaxze.io"
+    "type": "git",
+    "url": "https://github.com/gaxze/gaxze.io"
   },
   "scripts": {
     "init": "npm install && bower install"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
+    "grunt": "~0.4.5",
     "grunt-bowercopy": "^1.2.4",
     "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-concat": "^0.5.1",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-uglify": "^0.11.1",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-image": "^2.2.3",
+    "imagemin-jpegoptim": "^5.0.0",
+    "imagemin-mozjpeg": "^5.1.0",
+    "imagemin-pngquant": "^4.2.2"
+  },
+  "dependencies": {
+    "imagemin-jpegoptim": "^5.0.0",
+    "imagemin-mozjpeg": "^5.1.0",
+    "imagemin-pngquant": "^4.2.2"
   },
   "license": "MIT"
 }
-
