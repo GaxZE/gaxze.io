@@ -56,6 +56,7 @@ header.hero-image {
     padding: 125px 0 25px;
     background: #000 no-repeat;
     background-size: cover;
+    min-height: 445px;
 }
 
 header.hero-image .logo {
@@ -84,7 +85,6 @@ header.hero-image .title {
     font-weight: 700;
 }
 header.hero-image .title small {
-    color: #fff;
     display: block;
 }
 
