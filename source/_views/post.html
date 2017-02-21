@@ -9,14 +9,6 @@
         <div class="post">
             {{ page.blocks.content|raw }}
 
-            {% if page.categories %}
-                <p class="categories">
-                Categories:
-                {% for category in page.categories %}
-                <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
-                {% endfor %}
-                </p>
-            {% endif %}
             {% if page.tags %}
                 <p class="tags">
                 Tags:
