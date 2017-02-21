@@ -3,6 +3,7 @@ title: Symfony Live Hacking Day!
 tags: [sensio, symfony, symfony live]
 categories: [personal]
 hero: /images/deep-sky.jpg
+slug: this-is-a-test
 ---
 Fun times at the Symfony Live San Francisco 2012 Hacking Day! Code
 was hacked and pizza was had. Some pics of the conference are

@@ -6,7 +6,7 @@ tags:
 categories:
     - personal
 hero: /images/volcano-sea.jpg
-
+slug: happy-birthday-scul
 ---
 
 The first commit to the Sculpin repository was made on December 20th, 2011.

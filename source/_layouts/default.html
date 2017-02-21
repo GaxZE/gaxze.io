@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <title>{% block title %}Gary Hawes | garyhawes.co.uk{% endblock %}</title>
-    {% block stylesheets %}
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,700|Domine:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ site.url }}/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/monokai-sublime.css" />
-    <link rel="stylesheet" href="{{ site.url }}/css/garyhawes.min.css" />
-    {% endblock %}
-</head>
+{% include "head.html" %}
 <body class="{{ page.body_class }}">
-    {% include "header.html" %}
+    {% include "banner.html" %}
 
     <section id="main">
         <div class="container">
