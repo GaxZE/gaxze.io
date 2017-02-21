@@ -23,10 +23,5 @@
     "imagemin-mozjpeg": "^5.1.0",
     "imagemin-pngquant": "^4.2.2"
   },
-  "dependencies": {
-    "imagemin-jpegoptim": "^5.0.0",
-    "imagemin-mozjpeg": "^5.1.0",
-    "imagemin-pngquant": "^4.2.2"
-  },
   "license": "MIT"
 }
