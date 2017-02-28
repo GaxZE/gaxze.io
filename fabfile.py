@@ -17,6 +17,7 @@ def build():
     local('composer install --no-dev --optimize-autoloader')
     local('composer run clean')
     local('composer run production')
+    local('cp source/.htaccess "output_prod/"')
 
 def deploy():
     rsync_project(
