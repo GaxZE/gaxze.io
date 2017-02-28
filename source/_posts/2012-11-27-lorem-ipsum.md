@@ -1,8 +1,9 @@
 ---
 title: Lorem Ipsum
-categories:
+tags:
     - testing
 hero: /images/flame.jpeg
+slug: something-magic
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue
