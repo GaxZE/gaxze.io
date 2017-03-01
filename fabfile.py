@@ -6,12 +6,12 @@ env.hosts = ['garyhawes.co.uk']
 project_root = '/usr/share/nginx/gaxze.io'
 
 @task
-def build_deploy():
-    build()
+def deploy_prod():
+    setup()
     deploy()
     file_permissions()
 
-def build():
+def setup():
     local('npm run init')
     local('grunt')
     local('composer install --no-dev --optimize-autoloader')
