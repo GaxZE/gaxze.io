@@ -49,13 +49,16 @@ h6 {
     margin: 0 auto;
 }
 
+.front header.hero-image {
+
+}
+
 header.hero-image {
     text-align: center;
     margin: 0 0 40px;
-    padding: 125px 0 25px;
+    padding: 55px 0 25px;
     background: #000 no-repeat;
     background-size: cover;
-    min-height: 445px;
 }
 
 header.hero-image .logo {
@@ -65,7 +68,7 @@ header.hero-image .logo {
 header.hero-image .logo img {
     border: 8px solid #f0803c;
     border-radius: 50%;
-    margin: 0 auto 20px;
+    margin: 20px auto;
     height: 180px;
 }
 

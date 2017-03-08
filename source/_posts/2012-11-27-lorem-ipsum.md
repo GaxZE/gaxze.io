@@ -2,7 +2,7 @@
 title: Lorem Ipsum
 tags:
     - testing
-hero: /images/flame.jpeg
+hero: /images/moon-circle.jpg
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue
