@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About
-hero:
 
 ---
 # Hello I'm Gary.

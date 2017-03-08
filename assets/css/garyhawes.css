@@ -157,6 +157,10 @@ header h5 {
     border: 0;
 }
 
+section#main {
+    min-height: 400px;
+}
+
 footer {
     color: #ffffff;
     background: #222;
