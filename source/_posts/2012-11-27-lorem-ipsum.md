@@ -2,6 +2,8 @@
 title: Lorem Ipsum
 tags:
     - testing
+    - This
+    - That
 hero: /images/moon-circle.jpg
 
 ---

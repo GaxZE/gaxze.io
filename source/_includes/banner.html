@@ -9,13 +9,6 @@
                         <img class="img-responsive header-logo" src="{{ site.url }}{{ site.logo }}" alt="Logo">
                         {% include "social-media.html" %}
                     </div>
-                    {% else %}
-                        <div class="page-headercol-sm-12 text-col text-center">
-                            <h1 class="title" style="color:{{ page.title_colour }}">{{ page.title }} <small style="color:{{ page.subtext_colour }}">{{ page.subtext }}</small></h1>
-                            {% if page.layout == 'post' %}
-                                <p class="posted" style="color: white; font-style:italic;">Posted: {{ page.date|date('jS F Y') }}</p>
-                            {% endif %}
-                        </div>
                     {% endif %}
                 </div>
             </div>
