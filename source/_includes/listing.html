@@ -1,8 +1,8 @@
 {% for post in page.pagination.items %}
 <article class="blog-entry">
     <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-    <time>{{ post.date|date("M. jS, Y") }}</time>
-    <div> {{ post.blocks.content|split('</p>')|first|raw}} </div>
+    <p class="posted">Posted: {{ post.date|date("M. jS, Y") }}</p>
+    <div class="snippet"> {{ post.blocks.content|split('</p>')|first|raw}} </div>
 </article>
 {% if not loop.last %}<hr />{% endif %}
 {% endfor %}

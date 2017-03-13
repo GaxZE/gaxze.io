@@ -109,6 +109,11 @@ header h5 {
     color: #f0803c;
 }
 
+h1.title {
+    font-size: 58px;
+    font-size: 5.6rem;
+}
+
 .header-logo {
     border-radius: 50%;
 }
@@ -151,6 +156,7 @@ header h5 {
 
 section#main {
     min-height: 400px;
+    padding-bottom: 40px;
 }
 
 footer {
@@ -175,9 +181,13 @@ footer .powered {
     font-size:2.8rem;
 }
 
+.latest .snippet {
+    margin-top: 10px;
+}
+
 .post-head h1 {
-    font-size: 52px;
-    font-size: 5.2rem;
+    font-size: 58px;
+    font-size: 5.8rem;
     letter-spacing: 0;
     margin: 0 0 20px;
 }
@@ -187,14 +197,18 @@ footer .powered {
     overflow: hidden;
 }
 
+.blog-entry .posted,
 .post-meta .tags,
 .post-meta .posted {
     color: #666;
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin: 0;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
+.blog-entry .posted,
 .post-meta .posted {
     font-style: italic;
 }
@@ -204,6 +218,8 @@ footer .powered {
 }
 
 @media(max-width:980px) {
+
+    h1.title,
     .post-head h1 {
         font-size: 42px;
         font-size: 4.2rem;
@@ -222,6 +238,8 @@ footer .powered {
 }
 
 @media(max-width:767px) {
+
+    h1.title,
     .post-head h1 {
         font-size: 32px;
         font-size: 3.2rem;

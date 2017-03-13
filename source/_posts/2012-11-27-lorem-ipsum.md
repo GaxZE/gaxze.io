@@ -4,7 +4,7 @@ tags:
     - testing
     - This
     - That
-hero: /images/moon-circle.jpg
+hero: /images/flame.jpeg
 
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat congue
