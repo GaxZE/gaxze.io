@@ -184,8 +184,10 @@ footer .powered {
     font-size:2.8rem;
 }
 
-.latest .snippet {
+.latest .snippet p {
     margin-top: 10px;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .post-head h1 {
@@ -195,8 +197,8 @@ footer .powered {
     margin: 0 0 20px;
 }
 
+.post-meta,
 .post-head {
-    margin-bottom: 20px;
     overflow: hidden;
 }
 
