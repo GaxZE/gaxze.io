@@ -37,6 +37,9 @@ h6 {
     font-family: "Oswald", sans-serif;
 }
 
+form {
+    font-family: "Open Sans", sans-serif;
+}
 .heading {
     border-bottom: 8px solid #f0803c;
     margin: 0 0 20px 0;

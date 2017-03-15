@@ -10,4 +10,15 @@
         <h2 class="heading">Latest Tweets</h2>
         <a class="twitter-timeline" border-color="#a80000" lang="en" data-chrome="nofooter noheader" data-dnt="true" href="https://twitter.com/GaxZE" data-widget-id="702881882367725569" data-height="500">Tweets by @GaxZE</a>
     </div>
+    <div class="links">
+        <h2 class="heading">Links</h2>
+        <ul class="list-unstyled">
+            {% for link in site.links %}
+                <li>
+                    <a href="{{ link.url }}"><i class="fa {{ not link.icon ? 'fa-external-link-square' : link.icon }}" aria-hidden="true"></i> {{ link.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+    </div>
 </div>

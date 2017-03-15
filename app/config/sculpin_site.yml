@@ -9,4 +9,13 @@ gitlab: https://www.gitlab.com/gaxze
 stackoverflow: http://stackoverflow.com/users/293838/gaxze
 twitter: https://www.twitter.com/gaxze
 spotify: https://play.spotify.com/user/gaxze
+links:
+    guyhodge:
+        name: Guy Hodge
+        url: http://www.guyhodge.com/
+        icon:
+    joeroganpodcast:
+        name: Joe Rogan Experience Podcast
+        url: http://podcasts.joerogan.net/
+        icon: fa-podcast
 
