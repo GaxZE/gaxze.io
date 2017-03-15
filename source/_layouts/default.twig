@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-{% include "head.html" %}
+{% include "head.twig" %}
 <body class="{{ page.body_class }}">
-    {% include "banner.html" %}
+    {% include "banner.twig" %}
 
     <section id="main">
         <div class="container">
@@ -12,7 +12,7 @@
         </div>
     </section>
 
-    {% include "footer.html" %}
+    {% include "footer.twig" %}
 
     {% if site.google_analytics_tracking_id %}
         <script type="text/javascript">
