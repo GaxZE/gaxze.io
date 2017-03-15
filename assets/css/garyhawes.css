@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    font-family: 'Domine', serif;
+    font-family: "Domine", sans-serif;
     font-weight: 400;
 }
 
@@ -34,7 +34,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 .heading {
