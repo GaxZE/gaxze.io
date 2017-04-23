@@ -211,11 +211,6 @@ footer .powered {
     font-size: 1.6rem;
 }
 
-.blog-entry .posted,
-.post-meta .posted {
-    font-style: italic;
-}
-
 .post-meta .tags a {
     text-transform: capitalize;
 }
