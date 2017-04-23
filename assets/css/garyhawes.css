@@ -23,17 +23,13 @@ a.active {
     transition: all .5s;
 }
 
-time {
-    font-style: italic;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: "Oswald", sans-serif;
 }
 
@@ -224,6 +220,35 @@ footer .powered {
     text-transform: capitalize;
 }
 
+nav.article ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav.article ul li {
+    padding: 0 10px;
+    margin: 0;
+}
+
+nav.article ul li a,
+.read-more a {
+    padding: 0.7rem 1rem;
+    background: #222;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+
+nav.article ul li a:hover,
+.read-more a:hover {
+    background: #f0803c;
+    color: #222;
+    text-decoration: none;
+}
+
+
 @media(max-width:980px) {
 
     h1.title,
@@ -242,7 +267,6 @@ footer .powered {
 }
 
 @media(max-width:767px) {
-
     header.hero-image .logo img {
         height: 130px;
     }
