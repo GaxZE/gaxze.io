@@ -244,7 +244,7 @@ nav.article ul li a,
 nav.article ul li a:hover,
 .read-more a:hover {
     background: #f0803c;
-    color: #222;
+    color: #fff;
     text-decoration: none;
 }
 
