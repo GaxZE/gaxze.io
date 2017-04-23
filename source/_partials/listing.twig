@@ -3,21 +3,7 @@
         <h3>
             <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
         </h3>
-        <div class="post-meta">
-            <div class="col-sm-8 posted">
-                <time itemprop="datePublished" content="{{ post.date|date('jS. F. Y') }}" datetime="{{ post.date|date('jS. M. Y') }}">
-                    <span class="day">{{ post.date|date('jS') }}</span>&nbsp;<span class="month">{{ post.date|date('F') }}</span>&nbsp;<span class="year">{{ post.date|date('Y') }}</span>
-                </time>
-            </div>
-            {% if post.meta.tags %}
-            <div class="col-sm-4 tags text-right">
-                <i class="fa fa-tags"></i>
-                {% for tag in post.meta.tags %}
-                    <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-                {% endfor %}
-            </div>
-            {% endif %}
-        </div>
+        {% include "post-meta.twig" %}
         <div class="snippet"> {{ post.blocks.content|split('</p>')|first|raw}} </div>
     </article>
     {% if not loop.last %}<hr />{% endif %}

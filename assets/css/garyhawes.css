@@ -59,7 +59,7 @@ form {
 
 header.hero-image {
     text-align: center;
-    margin: 0 0 40px;
+    margin: 0 0 10px;
     padding: 55px 0 25px;
     background: #000 no-repeat;
     background-size: cover;
@@ -231,9 +231,6 @@ footer .powered {
         font-size: 42px;
         font-size: 4.2rem;
     }
-    .navbar-fixed-top {
-        padding: 15px 0;
-    }
 
     .navbar-fixed-top.navbar-shrink {
         padding: 6px 0;
@@ -245,6 +242,10 @@ footer .powered {
 }
 
 @media(max-width:767px) {
+
+    header.hero-image .logo img {
+        height: 130px;
+    }
 
     .post p {
         font-size: 16px;
