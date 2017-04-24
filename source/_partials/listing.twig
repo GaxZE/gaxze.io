@@ -5,6 +5,11 @@
         </h3>
         {% include "post-meta.twig" %}
         <div class="snippet"> {{ post.blocks.content|split('</p>')|first|raw}} </div>
+        <div class="read-more">
+            <a href="{{ post.url }}">
+                Read more <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+        </div>
     </article>
     {% if not loop.last %}<hr />{% endif %}
 {% endfor %}
