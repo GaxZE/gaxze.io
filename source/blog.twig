@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+hero: /images/cave-water.jpg
+generator: pagination
+
+---
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="listing">
+                <h2 class="heading first">Blog Posts</h2>
+                {% include "listing.twig" %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
