@@ -73,6 +73,16 @@ header.hero-image .logo img {
     height: 180px;
 }
 
+header.hero-image .logo img {
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition:         transform .6s ease-in-out;
+}
+header.hero-image .logo img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
 .front header.hero-image {
     background-position: right bottom;
     background-repeat: no-repeat;
