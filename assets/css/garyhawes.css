@@ -2,11 +2,11 @@ body {
     overflow-x: hidden;
     font-family: "Domine", sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 p {
-    font-size: 16px;
-    font-size: 1.6rem;
     letter-spacing: 0;
 }
 
@@ -46,11 +46,6 @@ form {
 
 .img-centered {
     margin: 0 auto;
-}
-
-.post p {
-    font-size: 18px;
-    font-size: 1.8rem;
 }
 
 header.hero-image {
@@ -193,9 +188,6 @@ footer .powered {
 
 .listing .snippet p {
     margin-top: 10px;
-    font-size: 16px;
-    font-size: 1.6rem;
-    color: #555;
 }
 
 .post-head h1 {
@@ -217,8 +209,6 @@ footer .powered {
     font-family: 'Oswald', sans-serif;
     padding: 0;
     margin: 0;
-    font-size: 16px;
-    font-size: 1.6rem;
 }
 
 .post-meta .tags a {
@@ -276,9 +266,9 @@ nav.article ul li a:hover,
         height: 130px;
     }
 
-    .post p {
-        font-size: 16px;
-        font-size: 1.6rem;
+    body {
+        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     h1.title,
