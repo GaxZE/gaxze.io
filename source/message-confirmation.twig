@@ -1,8 +1,16 @@
 ---
 layout: default
-title: Message sent
+title: Message received
 hero: /images/cave-water.jpg
 ---
 
-<p>Thanks for the email. I will get back to you soon.</p>
 
+{% block content %}
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <h1 class="heading first">{{ page.title }}</h1>
+        <p>Thanks for the email. I will get back to you soon.</p>
+        <p>Failing that, <a href="https://twitter.com/gaxze">tweet me</a>.</p>
+    </div>
+</div>
+{% endblock %}

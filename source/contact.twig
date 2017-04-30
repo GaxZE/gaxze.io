@@ -4,38 +4,45 @@ title: Contact
 hero: /images/flame.jpeg
 ---
 
-<p>Any questions you have please don't hesitate to contact me via the email form below.</p>
+{% block content %}
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <h1 class="heading first">{{ page.title }}</h1>
 
-<form action="https://formspree.io/{{ site.mail }}" method="POST">
-    <div class="form__name form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" name="name" required>
+        <p>Any questions you have please don't hesitate to contact me via the email form below.</p>
+
+        <form action="https://formspree.io/{{ site.mail }}" method="POST">
+            <div class="form__name form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+
+            <div class="form__email form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" required>
+            </div>
+
+            <div class="form__subject form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" name="subject" required>
+            </div>
+
+            <div class="form__message form-group">
+                <label for="message">Message</label>
+                <textarea name="message" class="form-control" rows="5" required></textarea>
+            </div>
+
+            <div class="form__actions">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fa fa-send-o"></i>
+                    Submit
+                </button>
+            </div>
+
+            <input type="hidden" name="_next" value="{{ site.url }}/message-confirmation/" />
+
+            <input type="text" name="_gotcha" style="display: none" />
+        </form>
     </div>
-
-    <div class="form__email form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" name="email" required>
-    </div>
-
-    <div class="form__subject form-group">
-        <label for="subject">Subject</label>
-        <input type="text" class="form-control" name="subject" required>
-    </div>
-
-    <div class="form__message form-group">
-        <label for="message">Message</label>
-        <textarea name="message" class="form-control" rows="5" required></textarea>
-    </div>
-
-    <div class="form__actions">
-        <button class="btn btn-primary" type="submit">
-            <i class="fa fa-send-o"></i>
-            Submit
-        </button>
-    </div>
-
-    <input type="hidden" name="_next" value="{{ site.url }}/message-confirmation/" />
-
-    <input type="text" name="_gotcha" style="display: none" />
-</form>
-
+</div>
+{% endblock %}
