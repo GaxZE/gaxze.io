@@ -51,6 +51,8 @@ form {
 header.hero-image {
     text-align: center;
     margin: 0 0 10px;
+    font-size: 12px;
+    font-size: 1.2rem;
     padding: 55px 0 25px;
     background: #000 no-repeat;
     background-size: cover;
@@ -84,23 +86,26 @@ header.hero-image .logo img:hover {
     background-size: auto;
 }
 
-.social-media ul.list-inline > li {
+ul.social-media.list-inline > li {
     margin: 0;
     padding: 10px 5px;
 }
 
-.social-media ul.list-inline li a {
+ul.social-media.list-inline li a {
     background: #222;
     color: #fff;
     opacity: 0.7;
-    padding: 5px;
-    font-size: 1.5rem;
+    padding: 6px;
     border: 2px solid #f0803c;
     border-radius: 50%;
 }
 
-.social-media ul.list-inline li a:focus,
-.social-media ul.list-inline li a:hover {
+ul.social-media.list-inline li a i {
+
+}
+
+ul.social-media.list-inline li a:focus,
+ul.social-media.list-inline li a:hover {
     opacity: 1;
     background: #f0803c;
     border-color: #ffffff;
@@ -168,6 +173,8 @@ footer {
     color: #ffffff;
     background: #222;
     font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-size: 1.4rem;
     padding: 10px 0 0;
     margin-top: 20px;
 }
