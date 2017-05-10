@@ -8,9 +8,49 @@ hero: /images/cave-water.jpg
     <div class="col-xs-12 col-sm-8 col-lg-8">
         <div class="whoami">
             <h1 class="heading first">{{ page.title }}</h1>
-
-            <p>My name is Gary. I'm a web developer based around London and Surrey. Born in Kettering, Northamptonshire and raised in Watford, Hertfordshire, I specialise in backend web development, working mostly with PHP and Drupal.</p>
+            <p>My name is Gary. I'm a web developer based around London and Surrey. Born in Kettering, Northamptonshire and raised in Watford, Hertfordshire. I specialise in backend web development, working mostly with PHP and Drupal.</p>
             <p>Passionate for web development and technology, I am looking to use this website as a platform to showcase as much of my daily interests as possible.</p>
+            <h3>Skills</h3>
+            <p></p>
+            <h3>Career timeline</h3>
+                <!-- Timeline -->
+                <div class="timeline">
+
+                    <!-- Line component -->
+                    <div class="line text-muted"></div>
+
+
+                    {% for career in site.career %}
+                        <!-- Panel -->
+                        <article class="panel panel-primary">
+
+                            <!-- Icon -->
+                            <div class="panel-heading icon">
+                                <i class="fa fa-thumb-tack" aria-hidden="true"></i>
+                            </div>
+                            <!-- /Icon -->
+
+                            <!-- Heading -->
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <a href="{{ career.url }}" target="_blank">{{ career.org }} <i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                </h3>
+                            </div>
+                            <!-- /Heading -->
+
+                            <!-- Body -->
+                            <div class="panel-body">
+                                {{ career.body|raw }}
+                            </div>
+                            <!-- /Body -->
+                        </article>
+                        <!-- /Panel -->
+                    {% endfor %}
+
+                </div>
+                <!-- /Timeline -->
+            <h3>Education</h3>
+            <h3>Testimonials</h3>
 
         </div>
     </div>

@@ -2,8 +2,8 @@ body {
     overflow-x: hidden;
     font-family: "Domine", sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 p {
@@ -12,7 +12,6 @@ p {
 
 a,
 a:hover,
-a:focus,
 a:active,
 a.active {
     outline: 0;
@@ -21,6 +20,10 @@ a.active {
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
+}
+
+a:focus {
+    text-decoration: none;
 }
 
 h1,
@@ -284,3 +287,84 @@ nav.article ul li a:hover,
         font-size: 3.2rem;
     }
 }
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.timeline .line {
+    position: absolute;
+    width: 4px;
+    display: block;
+    background: currentColor;
+    top: 0px;
+    bottom: 0px;
+    margin-left: 30px;
+}
+
+.timeline .separator {
+    border-top: 1px solid currentColor;
+    padding: 5px;
+    padding-left: 40px;
+    margin-left: 30px;
+}
+
+.timeline .line::before { top: -4px; }
+.timeline .line::after { bottom: -4px; }
+.timeline .line::before,
+.timeline .line::after {
+    content: '';
+    position: absolute;
+    left: -4px;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.timeline .panel {
+    position: relative;
+    margin: 10px 0px 21px 60px;
+    clear: both;
+}
+
+.timeline .panel::before {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: -24px;
+    content: '';
+    border: inherit;
+    border-width: 12px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.timeline .panel .panel-heading.icon * {
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 80%;
+}
+.timeline .panel .panel-heading.icon {
+    position: absolute;
+    left: -44px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+}
+
+.timeline .panel .panel-body {
+    font-size: 12px;
+}
+
+.timeline .panel .panel-title a:hover { text-decoration: none;}
