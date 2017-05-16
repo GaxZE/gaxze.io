@@ -1,16 +1,14 @@
 {% if page.tags %}
     {% set postMeta = page.tags %}
-    {% set blogDate = page.date %}
 {% else %}
     {% set postMeta = post.meta.tags %}
-    {% set blogDate = post.date %}
 {% endif %}
 <div class="post-meta">
     <div class="col-xs-6 col-sm-6 col-lg-8 posted">
-        <time itemprop="datePublished" content="{{ blogDate|date('jS. F. Y') }}" datetime="{{ blogDate|date('jS. M. Y') }}">
-            <span class="day">{{ blogDate|date('jS') }}</span>&nbsp;
-            <span class="month">{{ blogDate|date('F') }}</span>&nbsp;
-            <span class="year">{{ blogDate|date('Y') }}</span>
+        <time itemprop="datePublished" content="{{ (page.date) ? page.date|date('jS. F. Y') : post.date|date('jS. F. Y') }}" datetime="{{ (page.date) ? page.date|date('jS. M. Y') : post.date|date('jS. M. Y') }}">
+            <span class="day">{{ (page.date) ? page.date|date('jS') : post.date|date('jS') }}</span>&nbsp;
+            <span class="month">{{ (page.date) ? page.date|date('F') : post.date|date('F') }}</span>&nbsp;
+            <span class="year">{{ (page.date) ? page.date|date('Y') : post.date|date('Y') }}</span>
         </time>
     </div>
     {% if postMeta %}
