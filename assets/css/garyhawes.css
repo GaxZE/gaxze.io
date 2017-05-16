@@ -238,7 +238,8 @@ nav.article ul li {
 nav.article ul li a,
 .read-more a {
     padding: 0.7rem 1rem;
-    background: #222;
+    background: #f0803c;
+    color: #fff;
     font-weight: bold;
     display: inline-block;
     text-transform: capitalize;
@@ -248,8 +249,8 @@ nav.article ul li a,
 
 nav.article ul li a:hover,
 .read-more a:hover {
-    background: #f0803c;
-    color: #fff;
+    background: #222;
+    color: #f0803c;
     text-decoration: none;
 }
 
