@@ -6,7 +6,7 @@ hero: /images/flame.jpeg
 
 {% block content %}
 <div class="row">
-    <div class="col-lg-10 col-lg-offset-1">
+    <div class="col-xs-12 col-sm-8 col-lg-8">
         <h1 class="heading first">{{ page.title }}</h1>
 
         <p>Any questions you have please don't hesitate to contact me via the email form below.</p>
@@ -43,6 +43,9 @@ hero: /images/flame.jpeg
 
             <input type="text" name="_gotcha" style="display: none" />
         </form>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-4">
+        {% include "twitter.twig" %}
     </div>
 </div>
 {% endblock %}

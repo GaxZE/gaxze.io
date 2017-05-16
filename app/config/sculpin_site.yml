@@ -18,4 +18,44 @@ links:
         name: Joe Rogan Experience Podcast
         url: http://podcasts.joerogan.net/
         icon: fa-podcast
-
+career:
+    britishcouncil:
+        org: British Council
+        title: Drupal Software Engineer
+        term: 2014-Present
+        url: https://www.britishcouncil.org
+        body: |
+            <p>Senior member of an agile scrum team, main focus on back-end development on over 120 multilingual Drupal sites.
+            Also responsible for maintenance and development of an ecommerce solution.
+            Work within a strict development, testing and release cycle.
+            Duties include management, maintenance and improvements to code-base.</p>
+    cityam:
+        org: City AM
+        title: Web Developer
+        term: 2013-2014
+        url: https://www.cityam.com
+        body: |
+            <p>Responsible for the management and development of the City AM website.
+            Main duties was maintenance to existing website and then to lead a homepage and website redesign.
+            Supported three separate newsletter campaigns to mailing lists of over 35,000 users & implemented City A.M. Bespoke magazine website.
+            Server administration, newsletter support and several other smaller projects.</p>
+    ndp:
+        org: New Digital Partnership
+        title: Web Developer
+        term: 2011-2013
+        url: https://www.ndp-studio.com
+        body: |
+            <p>Working as part of a team delivering a wide range of websites on budget and within strict deadlines.
+            Maintaining existing websites for current and new clients. Managing client’s requirements and expectations in relation to the company policies, procedures and processes.
+            Involved in every phase of a project from IA to design to build to theme and then on to handover with training.
+            Covered most of what there is to cover with Drupal 6 & 7.
+            Also responsible for launching websites, this included web server administration knowledge.</p>
+    gradworks:
+        org: Graduate Works
+        title: Web Developer
+        term: 2009-2011
+        url: http://www.graduateworks.com/
+        body: |
+            <p>Developed their website from scratch using Drupal 6.
+            Prototype website for a career/skill comparison tool for graduates.
+            Utilised Drupal Form API + Rahpael.js library for questionnaire and graphs.</p>
